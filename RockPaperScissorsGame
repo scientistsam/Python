@@ -1,0 +1,78 @@
+import time
+z=input("Wanna play some rock paper scissors?Say yes or no ")
+if z=="yes":
+    print("If you do anything wrong like typing an option that's not listed or not following the rules,then ")
+    time.sleep(2.5)
+    print("just restart the game and for every question where it's a yes or no answer,type yes or no plus no caps")
+    time.sleep(3)
+    scissors=1
+    rock=2
+    paper=3
+    Sam=10
+    import random
+    print("Pick an action!Your options are:rock,paper and scissors")
+    print("paper= win against rock,lose against scissors")
+    print("rock= win against scissors,lose against paper ")
+    print("scissors= win against paper,lose against rock")
+    a = input("Now pick")
+    if a == "scissors":
+        print("You have chosen scissors,nice choice!")
+    if a == "rock":
+        print("You have chosen rock,nice choice!")
+    if a == "paper":
+        print("You have chosen paper,nice choice!")
+    b = input("You wanna fight a player?")
+    if b == "yes":
+        print("Ok,finding a player available")
+        time.sleep(3)
+    if b == "no":
+        print("Ok,say yes when you do wanna fight")
+        b = input("You wanna fight?")
+    if b == "yes":
+        print("Ok,finding a player available")
+    if b == "no":
+        print("Ok,say yes when you do wanna fight")
+        b = input("You wanna fight?")
+    if b == "yes":
+        print("Ok,finding a player available")
+    if b == "no":
+        print("Ok,say yes when you do wanna fight")
+        b = input("You wanna fight?")
+    if b == "yes":
+        print("Ok,finding a player available")
+    if b == "no":
+        print("Ok,say yes when you do wanna fight")
+        b = input("You wanna fight?")
+        if b == "no":
+            print("Whatever, this is becoming boring now")
+    if b == "yes":
+        d=random.randint(1,3)
+        if d==1:
+            print("Your opponent has got scissors")
+        if d==2:
+            print("Your opponent has got rock")
+        if d==3:
+            print("Your opponent has got paper")
+        if d == 1 and a == "paper":
+            print("You lost")
+        if d == 1 and a == "scissors":
+            print("It's a draw")
+        if d == 1 and a == "rock":
+            print("Yay,you won!")
+        if d == 2 and a == "paper":
+            print("Yay, you won!")
+        if d == 2 and a == "rock":
+            print("It's a draw")
+        if d == 2 and a == "scissors":
+            print("You lost")
+        if d == 3 and a == "paper":
+            print("It's a draw")
+        if d == 3 and a == "rock":
+            print("Yay,you won!")
+        if d == 3 and a == "scissors":
+            print("You lost")
+    print("Restart the game if you want to play again")
+if z=="no":
+    print("Restart the game when you want to play")
+time.sleep(2)
+print("This game was made by Samarth Rajpal (aged 9 years)")
